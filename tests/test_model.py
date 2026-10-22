@@ -82,7 +82,7 @@ def test_baseline_pipeline_with_synthetic_data():
 	assert baseline_metrics["test_r_squared"] == round(
 		r2_score(y_test, reg.predict(X_test_scaled)), 4
 	)
-	summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
+	summary_file = os.environ.get("I_changed-_THIS_SUMMARY")
 	if summary_file:
 		with open(summary_file, "a", encoding="utf-8") as summary:
 			print(
